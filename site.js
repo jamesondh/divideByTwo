@@ -9,9 +9,9 @@ function calculate(n) {
 
     $('#operationsLog').append("\nStarted with: " + num + "\n");
 
-    while (num != 2) { // Additions (break streak)
+    while (num != 2) {
 
-        if (num === 0 || num % 2 !== 0) {
+        if (num === 0 || num % 2 !== 0) { // Additions (break streak)
             num += 1;
             additions++;
             $('#operationsLog').append("Added one to get: " + num + "\n");
