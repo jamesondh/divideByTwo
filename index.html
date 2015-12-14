@@ -6,30 +6,36 @@
     </head>
     <body>
 
-        <p>This script takes any number and divides it by two until 2 is reached. If the number is not even, it will add one.</p>
-        <p>Enter a number in the text box and this script will generate statistics.</p>
+        <div style="float:left; width:50%;">
+            <p>This script takes any number and divides it by two until 2 is reached. If the number is not even, it will add one.</p>
+            <p>Enter a number in the text box and this script will generate statistics on the right side.</p>
 
-        <form>
-            <input type="text" id="num" />
-            <input type="submit" value="Calculate" />
-        </form>
+            <form>
+                <input type="text" id="num" />
+                <input type="submit" value="Calculate" />
+            </form>
 
-        <p>Operations Log:</p>
-        <textarea disabled id="operationsLog" rows="8" cols="40">divideByTwo Operations Log
-        </textarea>
-        <br><br>
+            <br><hr>
 
-        <table border=1 id="table">
-            <tr>
-                <th>Number</th>
-                <th>Divisions (/2)</th>
-                <th>Additions (+1)</th>
-                <th>Total Operations</th>
-                <th># of Streaks</th>
-                <th>Highest Streak</th>
-            </tr>
-        </table>
+            <p>Operations Log:</p>
+            <textarea disabled id="operationsLog" style="width: 100%; height: 200px;">divideByTwo Operations Log
+            </textarea>
+        </div>
 
+        <div style="float:right; width:50%;">
+            <table border=1 id="table">
+                <tr>
+                    <th>Number</th>
+                    <th>Divisions (/2)</th>
+                    <th>Additions (+1)</th>
+                    <th>Total Operations</th>
+                    <th># of Streaks</th>
+                    <th>Highest Streak</th>
+                </tr>
+            </table>
+        </div>
+
+        <br>
         <p>Streak: When two or more divisions happen consecutively</p>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
