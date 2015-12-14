@@ -34,8 +34,8 @@ function calculate(n) {
     var totalOperations = additions + divisions;
 
     // Remove streaks of 0 and 1, because those aren't really streaks
-    for(var i = streaks.length - 1; i >= 0; i--) {
-        if(streaks[i] < 2) {
+    for (var i = streaks.length - 1; i >= 0; i--) {
+        if (streaks[i] < 2) {
            streaks.splice(i, 1);
         }
     }
