@@ -1,10 +1,11 @@
 function calculate(n) {
 
-    num = parseInt(n, 10);
-    divisions = 0;
-    additions = 0;
-    streaks = [0];
-    streaksCounter = 0;
+    var num = parseInt(n, 10);
+    var divisions = 0;
+    var additions = 0;
+    var streaks = [0];
+    var streaksCounter = 0;
+    var highestStreak;
 
     $('#operationsLog').append("\nStarted with: " + num + "\n");
 
@@ -30,7 +31,7 @@ function calculate(n) {
 
     }
 
-    totalOperations = additions + divisions;
+    var totalOperations = additions + divisions;
 
     // Remove streaks of 0 and 1, because those aren't really streaks
     for(var i = streaks.length - 1; i >= 0; i--) {
