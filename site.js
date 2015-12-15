@@ -69,8 +69,8 @@ $(function() {
     });
 
     // Alternatively, you can calculate here without using the form
-    //for (i = -100; i <= 100; i++) {
-    //    calculate(i);
-    //}
+    // for (i = 1; i <= 10; i++) {
+    //     calculate(i);
+    // }
 
 });
